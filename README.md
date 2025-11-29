@@ -34,7 +34,5 @@ If you'd like to collaborate or give feedback, feel free to reach out:
 - **Instagram:** [Click Here](#)
 - **Email:** Your EmailJS form handles direct messages through the site
 
----
 
-## 📁 Project Structure
 
