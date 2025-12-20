@@ -3,8 +3,6 @@
 Welcome to my personal portfolio website!  
 This portfolio showcases my skills, projects, and ways to get in touch with me.
 
----
-
 ## 🚀 Features
 
 ✨ Modern Dark UI Design  
@@ -14,7 +12,6 @@ This portfolio showcases my skills, projects, and ways to get in touch with me.
 🔗 LinkedIn & Instagram Social Links  
 📄 Resume Download Option  
 
----
 
 ## 🛠️ Technologies Used
 
