@@ -27,7 +27,7 @@ This portfolio showcases my skills, projects, and ways to get in touch with me.
 
 If you'd like to collaborate or give feedback, feel free to reach out:
 
-- **LinkedIn:** [https://www.linkedin.com/in/veeranjaneyulu-kuraganti-139a92268/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHNvOzT7sQme00NFs3FKg5g%3D%3D](#)
+- **LinkedIn:**https://www.linkedin.com/in/veeranjaneyulu-kuraganti-139a92268/
 - **Instagram:** [https://www.instagram.com/me__veera__/](#)
 - **Email:veeranjaneyulukuraganti@gmail.com 
 
