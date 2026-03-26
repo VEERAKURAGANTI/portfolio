@@ -1,45 +1,30 @@
-// Simple entrance animation on load & scroll
-    document.addEventListener('DOMContentLoaded', () => {
-      requestAnimationFrame(() => {
-        document.querySelectorAll('.fade-up').forEach((el, idx) => {
-          setTimeout(()=> el.classList.add('on'), idx*80);
-        });
-      });
+const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+  function animateCursor() {
+    cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+    rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    requestAnimationFrame(animateCursor);
+  }
+  animateCursor();
+  document.querySelectorAll('a,button,.btn').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '20px'; cursor.style.height = '20px';
+      cursor.style.background = 'var(--accent2)';
+      ring.style.width = '52px'; ring.style.height = '52px';
     });
-
-    // Smooth nav scrolling
-    document.querySelectorAll('nav.topnav a').forEach(a=>{
-      if(!a.hash) return;
-      a.addEventListener('click', e=>{
-        e.preventDefault();
-        document.querySelector(a.hash).scrollIntoView({behavior:'smooth',block:'start'});
-      });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '12px'; cursor.style.height = '12px';
+      cursor.style.background = 'var(--accent)';
+      ring.style.width = '36px'; ring.style.height = '36px';
     });
+  });
 
-    // Contact form (demo)
-    document.getElementById('sendBtn').addEventListener('click', () => {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const msgBox = document.getElementById('formMessage');
-
-      if(!name || !email || !message){
-        msgBox.style.color = '#ff7e7e';
-        msgBox.textContent = 'Please fill all fields.';
-        return;
-      }
-      // Basic email check
-      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if(!re.test(email)){
-        msgBox.style.color = '#ff7e7e';
-        msgBox.textContent = 'Please enter a valid email.';
-        return;
-      }
-
-      // Simulate send
-      msgBox.style.color = '#b9ffdd';
-      msgBox.textContent = 'Thanks — message sent.';
-      setTimeout(()=>{ msgBox.textContent = ''; document.getElementById('contactForm').reset(); }, 2500);
-    });
-
-    // If avatar.png not found it will gracefully fallback (see onerror handler in img tag)
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
