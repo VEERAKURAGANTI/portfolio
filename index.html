@@ -1,196 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Veera Kuraganti — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Java Backend Developer | Spring Boot | Microservices | Veeranjaneyulu Kuraganti Portfolio">
+<title>Veeranjaneyulu Kuraganti | Software Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <div class="container" style="display:flex;align-items:center;">
-      <div class="nav-left">
-        <div class="logo" aria-hidden="true">
-          <span class="dot" aria-hidden="true"></span>
-          <span style="font-size:16px;color:#f6edff">VEERA</span>
-        </div>
-      </div>
-      <nav class="topnav" role="navigation" aria-label="Top Navigation">
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a class="btn-resume" href="VEERA RESUME.pdf" download>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Resume
-        </a>
-      </nav>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">vk<span>.dev</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Open to Opportunities
     </div>
-  </header>
-
-  <main id="home" class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-left fade-up" style="--delay:.05s">
-        <span class="eyebrow">Hello, I build things</span>
-        <h1>
-          I’m a <span class="title-line">
-            <span class="highlight">Software Engineer</span>
-            <span class="stroke" aria-hidden="true"></span>
-          </span>
-        </h1>
-        <p class="lead">Seeking a challenging position in a IT organization where I can learn new technologies, expand my knowledge 
-in Java Full Stack Development, and leverage my learning to contribute to projects effectively. </p>
-
-        <div class="cta-row">
-          <a class="primary-cta" href="#projects">View Projects</a>
-          <a class="secondary-cta" href="#contact">Hire Me</a>
-        </div>
-
-        <div style="margin-top:22px;">
-          <span class="badge">OpenToWork</span>
-        </div>
-      </div>
-
-      <div class="hero-right fade-up" style="--delay:.1s">
-        <!-- <div class="avatar-card">
-          <div class="avatar-glow" aria-hidden="true"></div>
-          <div class="avatar-wrap">
-            <div class="avatar" aria-hidden="true"> -->
-              <!-- put your local avatar file named "avatar.png" in same folder OR replace src -->
-              <img src="avthar.png" alt="Avatar" height="500px" width="400px" onerror="this.style.filter=''; this.style.background='linear-gradient(135deg,var(--accent-mid),var(--accent-end))'">
-            <!-- </div>
-            <div class="avatar-meta">
-              <h4>Veera Kuraganti</h4>
-              <p>Full Stack Developer • Java & Web</p>
-              <div style="margin-top:8px"><small style="color:var(--muted)">Based in India • Open to opportunities</small></div>
-            </div> -->
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- ===== SKILLS SECTION ===== -->
-<section id="skills" class="skills-section">
-  <h2 class="section-title">Skills</h2>
-  <p class="section-subtitle">Technologies I work with</p>
-
-  <div class="skills-container">
-    <span class="skill-badge">Java</span>
-    <span class="skill-badge">Spring Core</span>
-    <span class="skill-badge">Spring MVC</span>
-    <span class="skill-badge">Spring Boot</span>
-    <span class="skill-badge">RESTful API</span>
-    <span class="skill-badge">Hibernate</span>
-    <span class="skill-badge">JDBC</span>
-    <span class="skill-badge">HTML</span>
-    <span class="skill-badge">CSS</span>
-    <span class="skill-badge">JavaScript</span>
-    <span class="skill-badge">SQL</span>
-    <span class="skill-badge">MySQL</span>
-    <span class="skill-badge">Git/gitHub</span>
+    <div class="hero-name">
+      <div class="first">Veeranjaneyulu</div>
+      <div class="last">Kuraganti</div>
+    </div>
+    <p class="hero-tagline">
+       <strong>Java Backend Developer</strong> · Spring Boot & Microservices
+    </p>
+    <p class="hero-desc">
+      Motivated Computer Science graduate passionate about building scalable microservices
+      and REST APIs. I thrive at the intersection of clean architecture and impactful solutions.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+    <div class="hero-socials">
+      <a href="mailto:veeranjaneyulukuraganti@gmail.com" class="social-link" title="Email">✉</a>
+      <a href="https://github.com/VEERAKURAGANTI" class="social-link" target="_blank" title="GitHub">⌥</a>
+      <a href="https://www.linkedin.com/in/veeranjaneyulu-kuraganti-139a92268/" class="social-link" target="_blank" title="LinkedIn">in</a>
+      <span>|</span>
+      <span style="font-family:'Space Mono',monospace;font-size:0.75rem;color:var(--muted)">Tenali, AP · India</span>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
-    <!-- PROJECTS -->
-    <section id="projects" class="projects-wrap">
-      <h2 class="fade-up">Project's</h2>
 
-      <div class="projects-grid">
-        <!-- Card 1 -->
-        <article class="proj-card fade-up">
-          <div class="proj-thumb">
-            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341767.png" alt="icon">
-          </div>
-          <div class="proj-info">
-            <h3>CIB Onboarding Mobile</h3>
-            <p>Seamless client onboarding app with identity capture, KYC verification and document upload flows.</p>
-            <a class="learn-btn" href="#" aria-label="Learn more about CIB Onboarding">Learn More →</a>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="proj-card fade-up">
-          <div class="proj-thumb">
-            <img src="https://cdn-icons-png.flaticon.com/512/6897/6897039.png" alt="icon">
-          </div>
-          <div class="proj-info">
-            <h3>Bank Transaction Portal</h3>
-            <p>Secure transaction management portal with role-based access and audit trails for financial operations.</p>
-            <a class="learn-btn" href="#">Learn More →</a>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="proj-card fade-up">
-          <div class="proj-thumb">
-            <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" alt="icon">
-          </div>
-          <div class="proj-info">
-            <h3>Loan Management Dashboard</h3>
-            <p>Admin dashboard for processing loan applications with status tracking and automated notifications.</p>
-            <a class="learn-btn" href="#">Learn More →</a>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="proj-card fade-up">
-          <div class="proj-thumb">
-            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="icon">
-          </div>
-          <div class="proj-info">
-            <h3>Policy Renewal System</h3>
-            <p>Customer policy renewal flow integrated with reminders, payment gateway and policy PDF generation.</p>
-            <a class="learn-btn" href="#">Learn More →</a>
-          </div>
-        </article>
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">001 · About Me</div>
+  <h2 class="section-title">Building with Purpose</h2>
+  <div class="about-grid">
+    <div class="about-info reveal">
+      <p>I'm a Computer Science graduate (2025) with a strong foundation in <strong style="color:var(--accent)">Java, Spring Boot, and Microservices</strong>. My approach to development is guided by clean code principles, scalable architecture, and continuous learning.</p>
+      <p>I enjoy designing and implementing backend systems — from REST API design to database optimization — and I'm always eager to take on projects that push my understanding further.</p>
+      <div class="info-chips">
+        <span class="chip highlighted">Java</span>
+        <span class="chip highlighted">Spring Boot</span>
+        <span class="chip highlighted">Microservices</span>
+        <span class="chip">REST APIs</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">Problem Solver</span>
+        <span class="chip">Team Player</span>
       </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" style="margin-top:400px;">
-      <h2 class="fade-up">Contact</h2>
-      <div class="contact-card fade-up">
-        <form id="contactForm" onsubmit="return false;">
-          <div class="contact-grid">
-            <input id="name" placeholder="Your name" required>
-            <input id="email" type="email" placeholder="you@email.com" required>
-            <textarea id="message" placeholder="What do you want to build?"></textarea>
-            <div></div>
-            
-          </div>
-
-          <div class="contact-cta">
-            <button class="send-btn" id="sendBtn">Send Message</button>
-            <div style="color:var(--muted);font-weight:600">Or email me <a href="mailto:veeranjaneyulukuraganti@gmail.com" style="color:var(--accent-end)">veeranjaneyulukuraganti@gmail.com</a></div>
-          </div>
-
-          <div id="formMessage" style="margin-top:12px;color:#8ff0c1;font-weight:700"></div>
-        </form>
+    </div>
+    <div class="reveal" style="animation-delay:0.15s">
+      <div class="edu-card">
+        <div class="edu-year">2021 – 2025</div>
+        <div class="edu-degree">B.Tech — Computer Science & Engineering</div>
+        <div class="edu-school">Chalapathi Institute of Engineering & Technology<br>Guntur, Lam, Andhra Pradesh</div>
+        <div class="edu-cgpa">⭐ CGPA: 7.33</div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <footer>
-      © Veera Kuraganti . Software Engineer . All rights reserved. 
-       <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/veeranjaneyulu-kuraganti-139a92268" 
-     target="_blank" title="LinkedIn">
-    <img src="linkedin.png" width="30" height="30">
-  </a>
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <div class="section-label">002 · Technical Skills</div>
+  <h2 class="section-title">What I Work With</h2>
+  <p class="section-sub">A curated set of technologies I use to design and build full backend systems.</p>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">☕</div>
+      <h3>Core Programming</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">OOP</span>
+        <span class="skill-tag">Multithreading</span>
+        <span class="skill-tag">Exception Handling</span>
+        <span class="skill-tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🔧</div>
+      <h3>Frameworks</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Spring Boot</span>
+        <!-- <span class="skill-tag">Hibernate</span>
+        <span class="skill-tag">JPA</span> -->
+        <span class="skill-tag">Spring Cloud</span>
+        <!-- <span class="skill-tag">Microservices</span> -->
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🗄️</div>
+      <h3>Databases</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">MySQL</span>
+        <!-- <span class="skill-tag">JDBC</span>
+        <span class="skill-tag">CRUD Ops</span>
+        <span class="skill-tag">SQL Joins</span> -->
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🌐</div>
+      <h3>APIs & Integration</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">Eureka</span>
+        <span class="skill-tag">API Gateway</span>
+        <span class="skill-tag">Postman</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🖥️</div>
+      <h3>Web & Tools</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Git/GitHub</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Eclipse</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">💡</div>
+      <h3>Professional Skills</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Problem Solving</span>
+        <span class="skill-tag">Teamwork</span>
+        <span class="skill-tag">Communication</span>
+        <span class="skill-tag">Adaptability</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/me__veera__/" 
-     target="_blank" title="Instagram">
-    <img src="instagram.png" width="30" height="30">
-  </a>
-    </footer>
-  </main>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">003 · Projects</div>
+  <h2 class="section-title">Things I've Built</h2>
+  <p class="section-sub">Real-world backend systems designed with scalability and clean architecture in mind.</p>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT / 01</div>
+      <div class="project-title">Insurance Management System</div>
+      <div class="project-type">Backend Microservices Application</div>
+      <ul class="project-bullets">
+        <li>Microservices-based backend for managing insurance policies, customers & transactions</li>
+        <li>RESTful APIs ensuring efficient and secure data exchange across services</li>
+        <li>MySQL with JPA/Hibernate for optimized CRUD operations</li>
+        <li>Spring Cloud (Eureka, API Gateway) for service discovery & centralized routing</li>
+        <li>API testing with Postman; clean code principles and exception handling applied</li>
+      </ul>
+      
+      <div class="project-techs">
+        <span class="project-tech">Java</span>
+        <span class="project-tech">Spring Boot</span>
+        <span class="project-tech">Spring Cloud</span>
+        <span class="project-tech">REST APIs</span>
+        <span class="project-tech">MySQL</span>
+        <span class="project-tech">JPA/Hibernate</span>
+        <span class="project-tech">Postman</span>
+      </div>
+      <div style="margin-top:1rem;display:flex;gap:0.6rem;">
+         <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+         <a href="#" class="btn btn-primary" target="_blank">Live</a>
+     </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT / 02</div>
+      <div class="project-title">Shopping Application</div>
+      <div class="project-type">Java & JDBC-Based Management System</div>
+      <ul class="project-bullets">
+        <li>Console-based shopping system with customer and admin workflows</li>
+        <li>Layered architecture: DAO, DTO, Service layers for modularity</li>
+        <li>JDBC-based CRUD operations for efficient and reliable DB interactions</li>
+        <li>Optimized SQL queries using joins for order reports & summaries</li>
+        <li>Authentication, input validation, and exception handling for security</li>
+        <li>Admin module for product management (Add, Update, Delete)</li>
+      </ul>
+      <div class="project-techs">
+        <span class="project-tech">Java</span>
+        <span class="project-tech">JDBC</span>
+        <span class="project-tech">MySQL</span>
+        <span class="project-tech">Eclipse</span>
+        <span class="project-tech">DAO Pattern</span>
+      </div>
+      <div style="margin-top:1rem;display:flex;gap:0.6rem;">
+        <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+        <a href="#" class="btn btn-primary" target="_blank">Live</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
-  <script src="./script.js">
+<!-- CERTIFICATIONS -->
+<section class="certs-section">
+  <div class="section-label">004 · Certifications</div>
+  <h2 class="section-title">Credentials</h2>
+  <p class="section-sub">Recognized learning milestones that shaped my technical foundation.</p>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon">🏆</div>
+      <div>
+        <div class="cert-title">Java Full Stack</div>
+        <div class="cert-by">Issued by JSpiders</div>
+      </div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon">🎨</div>
+      <div>
+        <div class="cert-title">HTML & CSS</div>
+        <div class="cert-by">Issued by bitLabs</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  </script>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">005 · Let's Connect</div>
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-wrapper reveal">
+    <div>
+      <div class="contact-title">Open to new<br>opportunities.</div>
+      <p class="contact-text">Whether you have a role in mind, a project to discuss, or just want to say hello — my inbox is always open. I'll do my best to respond promptly!</p>
+      <div class="contact-items">
+        <a href="mailto:veeranjaneyulukuraganti@gmail.com" class="contact-item">
+          <div class="icon">✉</div>
+          veeranjaneyulukuraganti@gmail.com
+        </a>
+        <a href="tel:+917675923225" class="contact-item">
+          <div class="icon">📱</div>
+          +91 7675923225
+        </a>
+        <div class="contact-item" style="cursor:default">
+          <div class="icon">📍</div>
+          Tenali, Guntur, Andhra Pradesh
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-group">
+        <label>YOUR NAME</label>
+        <input type="text" placeholder="Rahul Sharma"/>
+      </div>
+      <div class="form-group">
+        <label>EMAIL ADDRESS</label>
+        <input type="email" placeholder="hello@company.com"/>
+      </div>
+      <div class="form-group">
+        <label>MESSAGE</label>
+        <textarea placeholder="Tell me about your opportunity or project..."></textarea>
+      </div>
+      <button class="btn btn-primary" style="width:fit-content;cursor:none">Send Message ↗</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Veeranjaneyulu <span>Kuraganti</span></div>
+  <div class="footer-copy">© 2025 · Built with 💙 | Tenali, AP</div>
+</footer>
+
+
 </body>
 </html>
-
-
