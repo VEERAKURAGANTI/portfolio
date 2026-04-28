@@ -31,5 +31,3 @@ If you'd like to collaborate or give feedback, feel free to reach out:
 - **Instagram:** [https://www.instagram.com/me__veera__/](#)
 - **Email:veeranjaneyulukuraganti@gmail.com 
 
-
-
